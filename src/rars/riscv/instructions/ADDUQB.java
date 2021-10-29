@@ -10,7 +10,7 @@ public class ADDUQB extends BasicInstruction {
     public ADDUQB() {
         super("adduqb t1,t2,t3", "Special addition: set t1 to (t2 special plus t3)", 
                 BasicInstructionFormat.R_FORMAT,
-                "0000000 ttttt sssss 111 fffff 0001011");
+                "0000000 ttttt sssss 000 fffff 0001011");
     }
 
     public void simulate(ProgramStatement statement) {
