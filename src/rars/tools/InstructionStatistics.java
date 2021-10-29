@@ -243,7 +243,8 @@ public class InstructionStatistics extends AbstractToolAndApplication {
         if (instruction instanceof ADDI || instruction instanceof ADDIW || instruction instanceof ANDI
                 || instruction instanceof ORI || instruction instanceof XORI
                 || instruction instanceof SLTI || instruction instanceof SLTIU
-                || instruction instanceof LUI || instruction instanceof AUIPC)
+                || instruction instanceof LUI || instruction instanceof AUIPC
+                || instruction instanceof ADDUQB)
             return InstructionStatistics.CATEGORY_ALU;      // addi, addiw, andi, ori, xori, slti, sltiu, lui, auipc
         if (instruction instanceof SLLI || instruction instanceof SLLI64 || instruction instanceof SLLIW)
             return InstructionStatistics.CATEGORY_ALU;      // slli, slliw
